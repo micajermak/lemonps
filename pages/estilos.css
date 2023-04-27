@@ -86,9 +86,6 @@ header button:hover {
   }
   
 
-
-
-
   /*herobanner */
   
   .hero {
@@ -143,5 +140,294 @@ header button:hover {
     font-weight: 100;
     text-align: left;
     padding: 10px;
+}
+
+/*separador trabajo*/
+
+.trabajo {
+  height: 500px;
+  background-color: #ecebeb;
+  margin-bottom: 20px;
+}
+
+.caja {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+  padding: 20px;
+}
+
+.titulos h2{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  padding-top: 60px;
+}
+
+.logo p{
+  padding: 2px;
+}
+.logo{
+  width: 400px;
+  height: 300px;
+  background-color: #ecebeb;
+  margin: 20px;
+  padding: 30px;
+}
+
+.logo img {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+/*separador dinero*/
+
+.dinero{
+  height: 600px;
+}
+
+.dinero h2{
+  text-align: center;
+  font-size: 130px;
+  color: #434242;
+
+}
+
+.dinero h3{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+  padding-top: 100px;
+  color: #434242;
+}
+
+
+.dinero p{
+  text-align: center;
+  padding-top: 10px;
+  color: #434242;
+  font-size: 18px;
+}
+
+.fecha{
+  text-align: center;
+  display: flex;
+  justify-content:space-between;
+  width: 300px;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.fecha a{
+  color:#ff00ae;
+}
+
+.fecha a:hover{
+  text-decoration: underline;
+}
+
+/*separador card*/
+
+/*card en movimiento */
+
+.globo{
+  display: flex;
+  justify-content: center;
+  height: 900px; 
+  background-color: #ecebeb;
+}
+
+
+.contenedor{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1100px;
+  max-height: 800px;
+  background-color: #fff;
+}
+
+.chico{
+  grid-column: 1/4;
+  background-color:#ecebeb;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.card{
+  border: 20px solid #ecebeb;
+  padding: 20px 20px 0px 20px;
+}
+
+.card h2 {
+  padding: 2px;
+  padding-top: 15px;
+  font-weight: 100;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.card h3 {
+  font-weight: 100;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.card p {
+  font-weight: 200;
+  font-size: 16px;
+  margin-top: 40px;
+}
+.icon img {
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  float: left;
+  padding: 4px;
+  border-radius: 45px;
+}
+
+.card p span {
+  color: #f90081;
+  font-weight: 300;
+}
+
+/*section corazon */
+.corazon{
+  height: 600px;
+  text-align: center;
+}
+
+.join img{
+  width: 100px;
+  padding-top: 100px;
+}
+
+.join h2{
+  font-size: 50px;
+  font-weight: 400;
+  padding-bottom: 30px;
+  color: #434242;
+}
+
+.join p{
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.join button{
+  font-size: 18px;
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #f90081;
+}
+
+.join button:hover{
+  background-color: #dd4493;
+  color: #ecebeb;
+}
+
+
+/*Footer*/
+
+.gridFooter div > div {
+  padding: 1rem;
+  display: flex;
+}
+
+/*grilla footer*/
+footer {
+  background-color: #000;
+  height: 800px;
+}
+.filas {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  max-width: 1100px;
+  background-color: #000;
+  margin-top: 60px;
+
+}
+
+.grilla img {
+  width: 50px;
+}
+.grilla .grande {
+  grid-column: 1/6;
+}
+
+.grilla button {
+  border-radius: 8px;
+  margin: 2px;
+  border: 1px solid #434242;
+  background-color: #000;
+  color: #707070;
+  padding: 2px;
+  width: 150px;
+}
+
+.grilla button:hover {
+  background-color: #3e3a3c;
+}
+
+.grilla i {
+  color: aliceblue;
+  letter-spacing: 30px;
+  font-size: 40px;
+}
+
+.grilla i:hover {
+  color: #707070;
+}
+
+.grilla p {
+  color: grey;
+  padding: 2px;
+  margin-bottom: 4px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.grilla ul {
+  list-style: none;
+  padding: 2px;
+  line-height: 40px;
+}
+
+.grilla li a {
+  color: #f3f1f1;
+}
+
+.grilla li a:hover {
+  text-decoration: underline;
+}
+
+.img {
+  background-color: #000;
+  border-radius: 10px;
+  color: #f3f1f1;
+}
+
+.grilla select {
+  color: #fff;
+  font-size: 15px;
+  background-color: #434242;
+}
+
+footer p {
+  color: aliceblue;
+}
+
+.grilla .triple {
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 

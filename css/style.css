@@ -373,17 +373,13 @@ header a:hover {
 
 .marcas {
   background-color: #ece9ea;
-  height: 600px;
+  height: 200px;
   text-align: center;
-}
-
-.marcas img {
-  width: 800px;
-  padding: 60px 0px 2px;
 }
 
 .marcas p {
   font-size: 15px;
+  padding-top: 30px;
 }
 
 /*separador ultimo */
@@ -429,7 +425,7 @@ header a:hover {
 /*grilla footer*/
 footer {
   background-color: #000;
-  height: 800px;
+  height: 100%;
 }
 .filas {
   display: flex;
@@ -451,6 +447,7 @@ footer {
 }
 .grilla .grande {
   grid-column: 1/6;
+  background-color: #000;
 }
 
 .grilla button {
@@ -520,61 +517,57 @@ footer p {
   margin-top: 30px;
 }
 
-
-
 /*MEDIA QUERYS*/
 
-/*Medida estandar pantalla 320 */
-@media only screen and (max-width:320px) {
+/* Smartphones (portrait & landscape) 
+#Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
+- Medida estandar pantalla resolucion 320 x 480 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   
   header{
-    margin-top: 50px;
+    margin-top: 10px;
   }
+
+  header nav a{
+    font-size: 10px;
+  }
+
   header a{
+    font-size: 10px;
     text-align: center;
+    padding: 20px 0px 20px 0px;
   }
+
   .titulo a{
-    margin-top: 50px;
-    font-size: 30px;
+    margin-top: 20px;
+    font-size: 26px;
   }
 
   .hero{
     width: auto;
     margin: auto;
     text-align: center;
-    height: 320px;
+    height: 280px;
   }
 
   .hero h1{
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     padding: 5px;
     margin-top: 10px;
   }
 
   .hero p{
-    font-size: 15px;
+    font-size: 12px;
     margin: auto;
     margin-bottom: 30px;
   }
 
   .hero button{
-    width: 150px;
-    height: 40px;
+    width: 160px;
+    height: 30px;
     margin: auto;
-    font-size: 16px;
-  }
-  
-  
-  .carrousel .tarjeta{
-    width: 100%;
-  }
-  .tarjeta .card{
-    margin: auto;
-    width: 200px;
-    height: 400px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    font-size: 15px;
   }
 
   .estrella{
@@ -589,7 +582,7 @@ footer p {
   }
 
   .estrella p{
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 20px;
     padding: 10px;
   }
@@ -602,14 +595,14 @@ footer p {
     width: 100%;
     background-color: #ece9ea;
   }
+
   .tarjeta .card{
     margin: auto;
     width: 250px;
-    height: 280px;
+    height: 260px;
     padding: 10px 0px 0px 2px;
     margin-bottom: 20px;
     margin-top: 20px;
-    
   }
 
   .subscripcion h2{
@@ -618,6 +611,10 @@ footer p {
     display: flex;
     justify-content: center;
     font-size: 30px;
+  }
+
+  .subscripcion p{
+    font-size: 14px;
   }
 
   .compra{
@@ -663,10 +660,6 @@ footer p {
     max-height: 400px;
   }
 
-  .marcas img{
-    max-width: 300px;
-  }
-
   .ultimo{
     max-width: 320px;
     min-height: 1400px;
@@ -706,60 +699,416 @@ footer p {
 }
 }
 
-/*Medida estandar pantalla 480*/
+/* #Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
+- Medida estandar pantalla resolucion 320 x 480 */
+@media (min-width: 481px) and (max-width: 767px) {
 
-@media only screen and (max-width:480px) {
+    header{
+      margin-top: 10px;
+    }
   
+    header nav a{
+      font-size: 12px;
+    }
+  
+    header a{
+      font-size: 12px;
+      text-align: center;
+      padding: 20px 0px 20px 0px;
+    }
+  
+    .titulo a{
+      margin-top: 20px;
+      font-size: 30px;
+    }
+  
+    .hero{
+      width: auto;
+      margin: auto;
+      text-align: center;
+      height: 356px;
+    }
+  
+    .hero h1{
+      text-align: center;
+      font-size: 25px;
+      padding: 5px;
+      margin-top: 10px;
+    }
+  
+    .hero p{
+      font-size: 16px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+  
+    .hero button{
+      width: 160px;
+      height: 30px;
+      margin: auto;
+      font-size: 18px;
+    }
+  
+    .estrella{
+      align-items: center;
+      text-align: center;
+      background-color: #ece9ea;
+    }
+  
+    .estrella h2{
+      font-size: 28px;
+      margin: auto;
+    }
+  
+    .estrella p{
+      font-size: 16px;
+      margin-top: 20px;
+      padding: 10px;
+    }
+  
+    .estrella img{
+      width: 200px;
+    }
+  
+    .carrousel .tarjeta{
+      width: 100%;
+      background-color: #ece9ea;
+    }
+  
+    .tarjeta .card{
+      margin: auto;
+      width: 350px;
+      height: 220px;
+      padding: 10px 5px 5px 20px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  
+    .subscripcion h2{
+      text-align: center;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+    }
+  
+    .subscripcion p{
+      font-size: 16px;
+    }
+  
+    .compra{
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+  
+    .compra .promo{
+      height: 430px;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+  
+    .info button{
+      width: 180px;
+      height: 70px;
+    }
+  
+    .info p{
+      font-size: 20px;
+      width: 200px;
+      padding-bottom: 20px;
+    }
+  
+    .celular{
+      width: 300px;
+      margin: auto;
+    }
+  
+    .celular h3{
+      margin: auto;
+      width: 200px;
+    }
+  
+    .celular img{
+      width: 200px;
+      height: 200px;
+    }
+  
+    .marcas{
+      width: 100%;
+      max-height: 300px;
+    }
+
+    .ultimo{
+      width: 100%;
+      min-height: 1400px;
+      
+    }
+  
+    .logo{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .logo .diseno p {
+      padding: 20px;
+    }
+  
+    footer{
+     width: 100%;
+     height: 2000px;
+    }
+  
+    .grilla{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 410px;
+      padding: 10px;
+    }
+    
+    .grilla .grande {
+    max-width: 410px;
+    padding: 20px;
+    }
+  
+    .grilla img{
+    width: 1px;
+    }
+  
+}
+
+/* iPads 
+#Dispositivo = Tablets, Ipads  
+- Medida estandar de pantalla resolucion 768px to 1024px */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    
+    header{
+      margin-top: 10px;
+    }
+  
+    header nav a{
+      font-size: 16px;
+    }
+  
+    header a{
+      font-size: 16px;
+      text-align: center;
+      padding: 20px 10px 20px 0px;
+    }
+  
+    .titulo a{
+      margin-top: 25px;
+      font-size: 30px;
+    }
+  
+    .hero{
+      width: auto;
+      margin: auto;
+      text-align: center;
+      height: 400px;
+    }
+  
+    .hero h1{
+      text-align: center;
+      font-size: 25px;
+      padding: 5px;
+      margin-top: 10px;
+    }
+  
+    .hero p{
+      font-size: 16px;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+  
+    .hero button{
+      width: 190px;
+      height: 35px;
+      margin: auto;
+      font-size: 25px;
+    }
+  
+    .estrella{
+      align-items: center;
+      text-align: center;
+      background-color: #ece9ea;
+    }
+  
+    .estrella h2{
+      font-size: 28px;
+      margin: auto;
+    }
+  
+    .estrella p{
+      font-size: 20px;
+      margin-top: 20px;
+      padding: 10px;
+    }
+  
+
+    .carrousel .tarjeta{
+      width: 100%;
+      background-color: #ece9ea;
+    }
+  
+    .tarjeta .card{
+      margin: auto;
+      width: 350px;
+      height: 220px;
+      padding: 10px 5px 5px 20px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  
+    .subscripcion h2{
+      text-align: center;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+    }
+  
+    .subscripcion p{
+      font-size: 16px;
+    }
+  
+    .compra{
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+  
+    .compra .promo{
+      height: 430px;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+  
+    .info button{
+      width: 180px;
+      height: 70px;
+    }
+  
+    .info p{
+      font-size: 20px;
+      width: 200px;
+      padding-bottom: 20px;
+    }
+  
+    .celular{
+      width: 300px;
+      margin: auto;
+    }
+  
+    .celular h3{
+      margin: auto;
+      width: 200px;
+    }
+  
+    .celular img{
+      width: 200px;
+      height: 200px;
+    }
+  
+    .marcas{
+      width: 100%;
+      max-height: 300px;
+    }
+
+    .ultimo{
+      width: 100%;
+      min-height: 1322px;
+      
+    }
+  
+    .logo{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .logo .diseno p {
+      padding: 20px;
+    }
+  
+    footer{
+     width: 100%;
+     height: 1300px;
+    }
+  
+    .grilla{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 700px;
+      padding: 10px;
+    }
+
+    .grilla .region{
+      padding: 40px;
+
+    }
+    
+    .grilla .grande {
+    width: 700px;
+    padding: 20px;
+    }
+  
+    .grilla img{
+    width: 50px;
+    }
+}
+  
+/* Ordenadores de sobremesa y portátiles 
+- Medida estandar de pantalla resolucion : 1224px */
+@media only screen and (min-width : 1224px) {
+   
   header{
-    margin-top: 20px;
+    margin-top: 10px;
+  }
+
+  header nav a{
+    font-size: 20px;
   }
 
   header a{
+    font-size: 20px;
     text-align: center;
+    padding: 20px 30px 20px 0px;
   }
 
   .titulo a{
-    margin-top: 40px;
-    font-size: 20px;
+    margin-top: 25px;
+    font-size: 40px;
   }
 
   .hero{
     width: auto;
     margin: auto;
     text-align: center;
-    height: 480px;
+    height: 610px;
   }
 
   .hero h1{
     text-align: center;
-    font-size: 24px;
+    font-size: 40px;
     padding: 5px;
     margin-top: 10px;
   }
 
   .hero p{
-    font-size: 15px;
+    font-size: 20px;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   .hero button{
-    width: 150px;
-    height: 40px;
-    margin: auto;
-    font-size: 16px;
-  }
-  
-  
-  .carrousel .tarjeta{
-    width: 100%;
-  }
-  .tarjeta .card{
-    margin: auto;
     width: 300px;
-    height: 400px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    height: 80px;
+    margin: auto;
+    font-size: 30px;
   }
 
   .estrella{
@@ -769,32 +1118,28 @@ footer p {
   }
 
   .estrella h2{
-    font-size: 30px;
+    font-size: 35px;
     margin: auto;
   }
 
   .estrella p{
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 20px;
     padding: 10px;
-  }
-
-  .estrella img{
-    width: 200px;
   }
 
   .carrousel .tarjeta{
     width: 100%;
     background-color: #ece9ea;
   }
+
   .tarjeta .card{
     margin: auto;
-    width: 400px;
-    height: 200px;
-    padding: 10px 0px 0px 20px;
+    width: 450px;
+    height: 220px;
+    padding: 20px 5px 5px 20px;
     margin-bottom: 20px;
     margin-top: 20px;
-    
   }
 
   .subscripcion h2{
@@ -802,7 +1147,15 @@ footer p {
     margin: auto;
     display: flex;
     justify-content: center;
-    font-size: 35px;
+    font-size: 30px;
+  }
+
+  .subscripcion p{
+    font-size: 36px;
+  }
+
+  .marcas p{
+    font-size: 20px;
   }
 
   .compra{
@@ -812,7 +1165,7 @@ footer p {
   }
 
   .compra .promo{
-    height: 400px;
+    height: 430px;
     margin: auto;
     margin-bottom: 40px;
   }
@@ -823,13 +1176,13 @@ footer p {
   }
 
   .info p{
-    font-size: 16px;
+    font-size: 20px;
     width: 200px;
     padding-bottom: 20px;
   }
 
   .celular{
-    width: 300px;
+    width: 400px;
     margin: auto;
   }
 
@@ -839,22 +1192,18 @@ footer p {
   }
 
   .celular img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
 
   .marcas{
-    width: 480px;
-    max-height: 400px;
-  }
-
-  .marcas img{
-    width: 400px;
+    width: 100%;
+    max-height: 300px;
   }
 
   .ultimo{
-    max-width: 480px;
-    min-height: 1400px;
+    width: 100%;
+    min-height: 1000px;
     
   }
 
@@ -869,355 +1218,221 @@ footer p {
   }
 
   footer{
-    max-width: 480px;
-   height: 1500px;
+   width: 100%;
+   height: 1100px;
   }
 
   .grilla{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 400px;
+    max-width: 900px;
+    padding: 10px;
+  }
+
+  .grilla .region{
+    padding: 40px;
+
   }
   
   .grilla .grande {
-  max-width: 400px;
+  width: 900px;
   padding: 20px;
-}
-
-.grilla img{
-  width: 1px;
-}
-}
-
-/*Medida estandar pantalla 600*/
-
-@media only screen and (max-width:600px) {
-  
-  header{
-    margin-top: 20px;
-  }
-  header a{
-    text-align: center;
-    font-size: 16px;
-    padding: 3px;
-  }
-  .titulo a{
-    margin-top: 30px;
-    font-size: 30px;
   }
 
-  .hero{
-    width: auto;
-    margin: auto;
-    text-align: center;
-    height: 480px;
-  }
-
-  .hero h1{
-    text-align: center;
-    font-size: 24px;
-    padding: 5px;
-    margin-top: 10px;
-  }
-
-  .hero p{
-    font-size: 15px;
-    margin: auto;
-    margin-bottom: 30px;
-  }
-
-  .hero button{
-    width: 180px;
-    height: 40px;
-    margin: auto;
-    font-size: 18px;
-  }
-  
-  
-  .carrousel .tarjeta{
-    width: 100%;
-  }
-  .tarjeta .card{
-    margin: auto;
-    width: 500px;
-    height: 400px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
-  .estrella{
-    align-items: center;
-    text-align: center;
-    background-color: #ece9ea;
-  }
-
-  .estrella h2{
-    font-size: 30px;
-    margin: auto;
-  }
-
-  .estrella p{
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 10px;
-  }
-
-  .estrella img{
-    width: 300px;
-  }
-
-  .carrousel .tarjeta{
-    width: 100%;
-    background-color: #ece9ea;
-  }
-  .tarjeta .card{
-    margin: auto;
-    width: 280px;
-    height: 290px;
-    padding: 10px 0px 0px 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    
-  }
-
-  .subscripcion h2{
-    text-align: center;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-  }
-
-  .celular{
-    width: 300px;
-    margin: auto;
-  }
-
-  .celular h3{
-    margin: auto;
-    width: 200px;
-  }
-
-  .celular img{
-    width: 200px;
-    height: 200px;
-  }
-
-  .marcas{
-    width: 100%;
-    max-height: 450px;
-  }
-
-  .marcas img{
-    max-width: 520px;
-  }
-
-  .ultimo{
-    max-width: 600px;
-    min-height: 1400px;
-    
-  }
-
-  .logo{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .logo .diseno p {
-    padding: 2px;
-  }
-
-  footer{
-    max-width: 600px;
-   height: 1500px;
-  }
-
-  .grilla{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 400px;
-  }
-  
-  .grilla .grande {
-  max-width: 600px;
-  padding: 10px;
-}
-
-.grilla img{
-  width: 1px;
-}
-}
-
-/*Medida estandar pantalla 768*/
-
-@media only screen and (max-width:768px) {
-  
-  header{
-    margin-top: 20px;
-  }
-  header a{
-    text-align: center;
-    font-size: 16px;
-    padding: 5px;
-  }
-  .titulo a{
-    margin-top: 30px;
-    font-size: 30px;
-  }
-
-  .hero{
-    width: auto;
-    margin: auto;
-    text-align: center;
-    height: 480px;
-  }
-
-  .hero h1{
-    text-align: center;
-    font-size: 24px;
-    padding: 5px;
-    margin-top: 10px;
-  }
-
-  .hero p{
-    font-size: 15px;
-    margin: auto;
-    margin-bottom: 30px;
-  }
-
-  .hero button{
-    width: 180px;
-    height: 40px;
-    margin: auto;
-    font-size: 18px;
-  }
-  
-  .carrousel .tarjeta{
-    width: 100%;
-  }
-  .tarjeta .card{
-    margin: auto;
-    width: 500px;
-    height: 380px;
-  }
-
-
-  .estrella{
-    align-items: center;
-    text-align: center;
-    background-color: #ece9ea;
-  }
-
-  .estrella h2{
-    font-size: 30px;
-    margin: auto;
-  }
-
-  .estrella p{
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 10px;
-  }
-
-  .estrella img{
-    width: 300px;
-  }
-
-  .carrousel .tarjeta{
-    width: 100%;
-    background-color: #ece9ea;
-  }
-  .tarjeta .card{
-    margin: auto;
-    width: 280px;
-    height: 290px;
-    padding: 10px 0px 0px 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    
-  }
-
-  .subscripcion h2{
-    text-align: center;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-  }
-
-  .celular{
-    width: 300px;
-    margin: auto;
-  }
-
-  .celular h3{
-    margin: auto;
-    width: 200px;
-  }
-
-  .celular img{
-    width: 200px;
-    height: 230px;
-  }
-
-  .marcas{
-    width: 100%;
-    max-height: 500px;
-  }
-
-  .marcas img{
-    max-width: 580px;
-  }
-
- 
-  .ultimo{
-    max-width: 768px;
-    min-height: 1400px;
-    
-  }
-
-  .logo{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-    text-align: center;
-  }
-
-  .logo .diseno p {
-    padding: 2px;
-  } 
-
-  
-  
-  .logo .diseno img {
-    width: 120px;
-  } 
-
-  footer{
-    max-width: 768px;
-   height: 1200px;
-  }
-
-  .grilla{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 700px;
-    padding: 16px;
-  }
-  
-  .grilla .grande {
-  max-width: 768px;
-  padding: 10px;
-}
-
-.grilla img{
+  .grilla img{
   width: 50px;
-}
-}
+  }
+ }
 
+/* Pantallas grandes */
+@media only screen and (min-width : 1824px) {
+   
+  header{
+    margin-top: 10px;
+  }
 
+  header nav a{
+    font-size: 25px;
+  }
+
+  header a{
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 30px 20px 0px;
+  }
+
+  .titulo a{
+    margin-top: 25px;
+    font-size: 40px;
+  }
+
+  .hero{
+    width: auto;
+    margin: auto;
+    text-align: center;
+    height: 880px;
+  }
+
+  .hero h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .hero p{
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 80px;
+  }
+
+  .hero button{
+    width: 400px;
+    height: 80px;
+    margin: auto;
+    font-size: 35px;
+  }
+
+  .estrella{
+    align-items: center;
+    text-align: center;
+    background-color: #ece9ea;
+  }
+
+  .estrella h2{
+    font-size: 40px;
+    margin: auto;
+  }
+
+  .estrella p{
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .carrousel .tarjeta{
+    width: 100%;
+    background-color: #ece9ea;
+  }
+
+  .tarjeta .card{
+    margin: auto;
+    width: 400px;
+    height: 220px;
+    padding: 20px 5px 5px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .subscripcion h2{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  .subscripcion p{
+    font-size: 30px;
+  }
+
+  .marcas p{
+    font-size: 20px;
+  }
+
+  .compra{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .compra .promo{
+    height: 430px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .info button{
+    width: 180px;
+    height: 70px;
+  }
+
+  .info p{
+    font-size: 20px;
+    width: 280px;
+    padding-bottom: 20px;
+  }
+
+  .celular{
+    width: 400px;
+    margin: auto;
+  }
+
+  .celular h3{
+    margin: auto;
+    width: 400px;
+    font-size: 60px;
+  }
+
+  .celular p{
+    font-size: 25px;
+  }
+
+  .celular img{
+    width: 400px;
+    height: 400px;
+  }
+
+  .minutos p{
+    font-size: 40px;
+  }
+
+  .marcas{
+    width: 100%;
+    max-height: 300px;
+  }
+
+  .ultimo{
+    width: 100%;
+    min-height: 500px;
+    
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .logo .diseno p {
+    padding: 20px;
+  }
+
+  footer{
+   width: 100%;
+   height: 1000px;
+  }
+
+  .grilla{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 900px;
+    padding: 10px;
+  }
+
+  .grilla .region{
+    padding: 40px;
+
+  }
+  
+  .grilla .grande {
+  width: 900px;
+  padding: 20px;
+  }
+
+  .grilla img{
+  width: 50px;
+  }
+ }

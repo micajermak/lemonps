@@ -15,17 +15,42 @@
   <body>
     <header>
       <!--Nav -->
-      <nav>
+      <div class="nav">
         <a href="#">Rentas</a>
         <a href="#">Propietarios</a>
         <a href="#">Auto</a>
         <a href="#">Mascotas</a>
         <a href="#">Vida</a>
         <a href="pages/devolucion.html">Devolucion</a>
-      </nav>
+      </div>
 
-      <a href="#"> Mi cuenta </a>
+      <a class="cuenta" href="#"> Mi cuenta </a>
     </header>
+
+    <section>
+      <nav class="navbar">
+        <input class="checkbox" type="checkbox" />
+        <i class="icons fas fa-bars"></i>
+        <i class="icons fas fa-times"></i>
+        <ul class="menu">
+          <li><a href="#">Renters</a></li>
+          <li><a href="#">Homeowners</a></li>
+          <li><a href="#">Car</a></li>
+          <li><a href="#">Pet</a></li>
+          <li><a href="#">Life</a></li>
+          <li><a href="#"> Giveback</a></li>
+          <li><a href="#">My account</a></li>
+
+          <li class="red">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+        </ul>
+
+        <h1><a href="#">Lemonade</a></h1>
+      </nav>
+    </section>
 
     <!-- Titulo-->
     <section class="titulo">
@@ -60,7 +85,7 @@
     <!--Tarjetas carrousel-->
     <section class="carrousel">
       <div class="tarjeta">
-        <div class="card">
+        <div class="card card-uno">
           <div class="icon">
             <img src="/img/cara.jpeg" alt="" />
             <h2>Maria Manka</h2>
@@ -74,7 +99,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card card-dos">
           <div class="icon">
             <img src="/img/carados.jpeg" alt="" />
             <h2>Rohan Gandhi</h2>
@@ -87,7 +112,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card card-tres">
           <div class="icon">
             <img src="/img/caratres.webp" alt="" />
             <h2>Brent</h2>
@@ -346,7 +371,7 @@
               <li><a href="">Reviews</a></li>
             </ul>
           </div>
-          <div class="region">
+          <div>
             <p>REGION</p>
             <select name="region" id="region">
               <optgroup label="">

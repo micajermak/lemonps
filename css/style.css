@@ -24,6 +24,10 @@ header {
   background-color: #fff;
 }
 
+.navbar-toggler {
+  border: none;
+}
+
 header a {
   color: #707070;
   padding: 18px;
@@ -439,7 +443,6 @@ footer {
   max-width: 1100px;
   background-color: #000;
   margin-top: 60px;
-
 }
 
 .grilla img {
@@ -517,747 +520,1186 @@ footer p {
   margin-top: 30px;
 }
 
-/*MEDIA QUERYS*/
-
-/* Smartphones (portrait & landscape) 
+/*MEDIA QUERYS
+Smartphones (portrait & landscape) 
 #Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
-- Medida estandar pantalla resolucion 320 x 480 */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  
-  header{
-    margin-top: 10px;
+- Medida estandar pantalla resolucion 320 x 480 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .nav {
+    display: none !important;
   }
 
-  header nav a{
-    font-size: 10px;
+  header {
+    height: 1px;
+    padding: 2px;
   }
 
-  header a{
-    font-size: 10px;
+  .cuenta {
+    display: none !important;
+  }
+
+  .titulo a {
+    display: none !important;
+  }
+
+  .navbar {
+    height: 48px;
+    position: relative;
+  }
+
+  .navbar h1 {
     text-align: center;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 12px;
   }
 
-  .titulo a{
-    margin-top: 20px;
+  .navbar h1 a {
+    color: #3e3a3c;
+  }
+
+  .checkbox,
+  .icons {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    padding: 10px 12px;
+  }
+
+  .icons {
+    pointer-events: none;
+    font-size: 24px;
+    color: #434242;
+  }
+
+  .checkbox {
+    opacity: 0;
+  }
+
+  .checkbox:checked ~ .menu {
+    display: block;
+    top: 48px;
+  }
+
+  .checkbox:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .fa-times {
+    display: none;
+  }
+
+  .checkbox:checked ~ .fa-times {
+    display: block;
+  }
+
+  .menu {
+    width: 60%;
+    position: absolute;
+    top: 48px;
+    background-color: rgb(47, 46, 46);
+    display: none;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(47, 46, 46);
+    display: block;
+    padding: 10px 12px;
+  }
+
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .red {
+    font-size: 30px;
+    padding-top: 100%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 10px;
+  }
+
+  .hero {
+    height: 600px;
+  }
+
+  .hero h1 {
     font-size: 26px;
   }
 
-  .hero{
-    width: auto;
+  .hero p {
     margin: auto;
-    text-align: center;
-    height: 280px;
+    padding: 0px;
+    width: 80%;
   }
 
-  .hero h1{
-    text-align: center;
-    font-size: 20px;
-    padding: 5px;
-    margin-top: 10px;
+  .hero button {
+    margin: 30px;
+    width: 80%;
+    margin-top: 20px;
   }
 
-  .hero p{
-    font-size: 12px;
-    margin: auto;
-    margin-bottom: 30px;
+  .estrella {
+    height: 420px;
   }
 
-  .hero button{
-    width: 160px;
-    height: 30px;
-    margin: auto;
-    font-size: 15px;
-  }
-
-  .estrella{
-    align-items: center;
-    text-align: center;
-    background-color: #ece9ea;
-  }
-
-  .estrella h2{
+  .estrella h2 {
     font-size: 25px;
     margin: auto;
   }
 
-  .estrella p{
-    font-size: 16px;
-    margin-top: 20px;
-    padding: 10px;
-  }
-
-  .estrella img{
-    width: 150px;
-  }
-
-  .carrousel .tarjeta{
-    width: 100%;
-    background-color: #ece9ea;
-  }
-
-  .tarjeta .card{
+  .estrella p {
     margin: auto;
-    width: 250px;
-    height: 260px;
-    padding: 10px 0px 0px 2px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
-  .subscripcion h2{
-    text-align: center;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-  }
-
-  .subscripcion p{
-    font-size: 14px;
-  }
-
-  .compra{
-    display: flex;
-    justify-content: center;
+    font-size: 15px;
     padding: 20px;
+    width: 98%;
+    height: 2px;
   }
 
-  .compra .promo{
-    height: 430px;
+  .carrousel .tarjeta {
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .card-tres {
+    display: none !important;
+  }
+  .card-dos {
+    display: none !important;
+  }
+  .tarjeta .card {
+    width: 50%;
+    padding: 2px;
+    margin: 10px;
+    height: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card h2 {
+    padding: 2px;
+    font-size: 15px;
+  }
+  .card h3 {
+    font-size: 10px;
+  }
+  .card p {
+    font-size: 10px;
+    margin-top: 2px;
+    padding: 2px;
+  }
+  .icon img {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+  }
+
+  .subscripcion {
+    padding: 30px;
+  }
+
+  .subscripcion h2 {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #434242;
+  }
+
+  .subscripcion p {
+    font-size: 15px;
+    padding: 5px;
+    width: 60%;
     margin: auto;
-    margin-bottom: 40px;
   }
 
-  .info button{
-    width: 180px;
-    height: 70px;
-  }
-
-  .info p{
-    font-size: 20px;
-    width: 200px;
-    padding-bottom: 20px;
-  }
-
-  .celular{
-    width: 300px;
-    margin: auto;
-  }
-
-  .celular h3{
-    margin: auto;
-    width: 200px;
-  }
-
-  .celular img{
-    width: 200px;
-    height: 200px;
-  }
-
-  .marcas{
-    width: 320px;
-    max-height: 400px;
-  }
-
-  .ultimo{
-    max-width: 320px;
-    min-height: 1400px;
-    
-  }
-
-  .logo{
+  .compra {
+    padding: 3px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .logo .diseno p {
+  .compra .promo {
+    width: 42%;
+    height: 180px;
+    background-color: #ece9ea;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  }
+
+  .compra .promo .info h3 {
+    color: #3e3a3c;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .promo .info p {
+    display: none !important;
+  }
+
+  .compra .promo .info button {
+    background-color: #f90081;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 9px;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .compra .promo span {
+    font-size: 10px;
+    font-weight: 100;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .compra .promo img {
+    margin-top: 3px;
+    margin-bottom: 2px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .celular {
+    margin: auto;
+    width: 80%;
+  }
+
+  .celular h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #434242;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .celular p {
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .celular img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .minutos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .minutos p {
+    padding-top: 100px;
+    font-size: 10px;
+  }
+
+  .globo h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .globo p {
+    font-size: 15px;
+  }
+
+  .globo img {
+    width: 300px;
+    margin-bottom: 4%;
+  }
+
+  .globo button {
+    padding: 12px;
+    margin-bottom: 50px;
+    font-size: 12px;
+  }
+
+  .limonada {
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .limonada h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .limonada p {
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .limonada .pizza img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .marcas {
+    height: 150px;
+  }
+
+  .marcas p {
+    font-size: 15px;
+    width: 70%;
+    margin: auto;
+  }
+
+  .ultimo {
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
   }
 
-  footer{
-    max-width: 320px;
-   height: 2400px;
+  .logo .diseno h3 {
+    padding: 5px;
   }
 
-  .grilla{
+  .logo .diseno p {
+    padding: 2px;
+  }
+  .logo .diseno {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .logo .diseno img {
+    width: 90px;
+  }
+
+  /*Footer*/
+
+  .gridFooter div > div {
+    padding: 1rem;
+    display: flex;
+  }
+
+  footer {
+    max-width: 100%;
+    height: 2400px;
+  }
+
+  .grilla {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 310px;
     padding: 20px;
+    background-color: #000;
   }
-  
+
   .grilla .grande {
-  max-width: 310px;
-  padding: 20px;
-}
-
-.grilla img{
-  width: 1px;
-}
-}
-
-/* #Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
-- Medida estandar pantalla resolucion 320 x 480 */
-@media (min-width: 481px) and (max-width: 767px) {
-
-    header{
-      margin-top: 10px;
-    }
-  
-    header nav a{
-      font-size: 12px;
-    }
-  
-    header a{
-      font-size: 12px;
-      text-align: center;
-      padding: 20px 0px 20px 0px;
-    }
-  
-    .titulo a{
-      margin-top: 20px;
-      font-size: 30px;
-    }
-  
-    .hero{
-      width: auto;
-      margin: auto;
-      text-align: center;
-      height: 356px;
-    }
-  
-    .hero h1{
-      text-align: center;
-      font-size: 25px;
-      padding: 5px;
-      margin-top: 10px;
-    }
-  
-    .hero p{
-      font-size: 16px;
-      margin: auto;
-      margin-bottom: 30px;
-    }
-  
-    .hero button{
-      width: 160px;
-      height: 30px;
-      margin: auto;
-      font-size: 18px;
-    }
-  
-    .estrella{
-      align-items: center;
-      text-align: center;
-      background-color: #ece9ea;
-    }
-  
-    .estrella h2{
-      font-size: 28px;
-      margin: auto;
-    }
-  
-    .estrella p{
-      font-size: 16px;
-      margin-top: 20px;
-      padding: 10px;
-    }
-  
-    .estrella img{
-      width: 200px;
-    }
-  
-    .carrousel .tarjeta{
-      width: 100%;
-      background-color: #ece9ea;
-    }
-  
-    .tarjeta .card{
-      margin: auto;
-      width: 350px;
-      height: 220px;
-      padding: 10px 5px 5px 20px;
-      margin-bottom: 20px;
-      margin-top: 20px;
-    }
-  
-    .subscripcion h2{
-      text-align: center;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      font-size: 30px;
-    }
-  
-    .subscripcion p{
-      font-size: 16px;
-    }
-  
-    .compra{
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-    }
-  
-    .compra .promo{
-      height: 430px;
-      margin: auto;
-      margin-bottom: 40px;
-    }
-  
-    .info button{
-      width: 180px;
-      height: 70px;
-    }
-  
-    .info p{
-      font-size: 20px;
-      width: 200px;
-      padding-bottom: 20px;
-    }
-  
-    .celular{
-      width: 300px;
-      margin: auto;
-    }
-  
-    .celular h3{
-      margin: auto;
-      width: 200px;
-    }
-  
-    .celular img{
-      width: 200px;
-      height: 200px;
-    }
-  
-    .marcas{
-      width: 100%;
-      max-height: 300px;
-    }
-
-    .ultimo{
-      width: 100%;
-      min-height: 1400px;
-      
-    }
-  
-    .logo{
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-  
-    .logo .diseno p {
-      padding: 20px;
-    }
-  
-    footer{
-     width: 100%;
-     height: 2000px;
-    }
-  
-    .grilla{
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      max-width: 410px;
-      padding: 10px;
-    }
-    
-    .grilla .grande {
-    max-width: 410px;
+    max-width: 310px;
     padding: 20px;
-    }
-  
-    .grilla img{
+  }
+
+  .grilla img {
     width: 1px;
-    }
-  
+  }
 }
 
 /* iPads 
 #Dispositivo = Tablets, Ipads  
 - Medida estandar de pantalla resolucion 768px to 1024px */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    
-    header{
-      margin-top: 10px;
-    }
-  
-    header nav a{
-      font-size: 16px;
-    }
-  
-    header a{
-      font-size: 16px;
-      text-align: center;
-      padding: 20px 10px 20px 0px;
-    }
-  
-    .titulo a{
-      margin-top: 25px;
-      font-size: 30px;
-    }
-  
-    .hero{
-      width: auto;
-      margin: auto;
-      text-align: center;
-      height: 400px;
-    }
-  
-    .hero h1{
-      text-align: center;
-      font-size: 25px;
-      padding: 5px;
-      margin-top: 10px;
-    }
-  
-    .hero p{
-      font-size: 16px;
-      margin: auto;
-      margin-bottom: 40px;
-    }
-  
-    .hero button{
-      width: 190px;
-      height: 35px;
-      margin: auto;
-      font-size: 25px;
-    }
-  
-    .estrella{
-      align-items: center;
-      text-align: center;
-      background-color: #ece9ea;
-    }
-  
-    .estrella h2{
-      font-size: 28px;
-      margin: auto;
-    }
-  
-    .estrella p{
-      font-size: 20px;
-      margin-top: 20px;
-      padding: 10px;
-    }
-  
-
-    .carrousel .tarjeta{
-      width: 100%;
-      background-color: #ece9ea;
-    }
-  
-    .tarjeta .card{
-      margin: auto;
-      width: 350px;
-      height: 220px;
-      padding: 10px 5px 5px 20px;
-      margin-bottom: 20px;
-      margin-top: 20px;
-    }
-  
-    .subscripcion h2{
-      text-align: center;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      font-size: 30px;
-    }
-  
-    .subscripcion p{
-      font-size: 16px;
-    }
-  
-    .compra{
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-    }
-  
-    .compra .promo{
-      height: 430px;
-      margin: auto;
-      margin-bottom: 40px;
-    }
-  
-    .info button{
-      width: 180px;
-      height: 70px;
-    }
-  
-    .info p{
-      font-size: 20px;
-      width: 200px;
-      padding-bottom: 20px;
-    }
-  
-    .celular{
-      width: 300px;
-      margin: auto;
-    }
-  
-    .celular h3{
-      margin: auto;
-      width: 200px;
-    }
-  
-    .celular img{
-      width: 200px;
-      height: 200px;
-    }
-  
-    .marcas{
-      width: 100%;
-      max-height: 300px;
-    }
-
-    .ultimo{
-      width: 100%;
-      min-height: 1322px;
-      
-    }
-  
-    .logo{
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-  
-    .logo .diseno p {
-      padding: 20px;
-    }
-  
-    footer{
-     width: 100%;
-     height: 1300px;
-    }
-  
-    .grilla{
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      max-width: 700px;
-      padding: 10px;
-    }
-
-    .grilla .region{
-      padding: 40px;
-
-    }
-    
-    .grilla .grande {
-    width: 700px;
-    padding: 20px;
-    }
-  
-    .grilla img{
-    width: 50px;
-    }
-}
-  
-/* Ordenadores de sobremesa y portátiles 
-- Medida estandar de pantalla resolucion : 1224px */
-@media only screen and (min-width : 1224px) {
-   
-  header{
-    margin-top: 10px;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .nav {
+    display: none !important;
   }
 
-  header nav a{
-    font-size: 20px;
+  header {
+    height: 1px;
+    padding: 2px;
   }
 
-  header a{
-    font-size: 20px;
+  .cuenta {
+    display: none !important;
+  }
+
+  .titulo a {
+    display: none !important;
+  }
+
+  .navbar {
+    height: 98px;
+    position: relative;
+  }
+
+  .navbar h1 {
     text-align: center;
-    padding: 20px 30px 20px 0px;
+    padding: 20px 12px;
+    font-size: 30px;
   }
 
-  .titulo a{
-    margin-top: 25px;
+  .navbar h1 a {
+    color: #3e3a3c;
+  }
+
+  .checkbox,
+  .icons {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    padding: 10px 12px;
+  }
+
+  .icons {
+    pointer-events: none;
+    font-size: 34px;
+    color: #434242;
+  }
+
+  .checkbox {
+    opacity: 0;
+  }
+
+  .checkbox:checked ~ .menu {
+    display: block;
+    top: 68px;
+  }
+
+  .checkbox:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .fa-times {
+    display: none;
+  }
+
+  .checkbox:checked ~ .fa-times {
+    display: block;
+  }
+
+  .menu {
+    width: 60%;
+    position: absolute;
+    top: 68px;
+    background-color: rgb(47, 46, 46);
+    display: none;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(47, 46, 46);
+    display: block;
+    padding: 10px 12px;
+  }
+
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .red {
     font-size: 40px;
+    padding-top: 100%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 20px;
   }
 
-  .hero{
-    width: auto;
+  .hero {
+    height: 800px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
     margin: auto;
-    text-align: center;
-    height: 610px;
+    padding: 0px;
+    width: 80%;
+    font-size: 20px;
   }
 
-  .hero h1{
-    text-align: center;
-    font-size: 40px;
+  .hero button {
+    margin: 30px;
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  .estrella {
+    height: 420px;
+  }
+
+  .estrella h2 {
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .estrella p {
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+    width: 98%;
+    height: 2px;
+  }
+
+  .carrousel .tarjeta {
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tarjeta .card {
+    width: 43%;
+    padding: 2px;
+    margin: 10px;
+    height: 230px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card h2 {
+    padding: 2px;
+    font-size: 20px;
+  }
+  .card h3 {
+    font-size: 15px;
+  }
+  .card p {
+    font-size: 20px;
+    margin-top: 2px;
+    padding: 2px;
+  }
+  .icon img {
+    width: 60px;
+    height: 60px;
+    padding: 4px;
+  }
+
+  .subscripcion {
+    padding: 30px;
+  }
+
+  .subscripcion h2 {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #434242;
+  }
+
+  .subscripcion p {
+    font-size: 20px;
     padding: 5px;
+    width: 60%;
+    margin: auto;
+  }
+
+  .compra {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .compra .promo {
+    width: 40%;
+    height: 250px;
+    background-color: #ece9ea;
+    margin: 16px;
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  }
+
+  .compra .promo .info h3 {
+    color: #3e3a3c;
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .promo .info p {
+    display: none !important;
+  }
+
+  .compra .promo .info button {
+    background-color: #f90081;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 9px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .compra .promo span {
+    font-size: 16px;
+    font-weight: 100;
     margin-top: 10px;
-  }
-
-  .hero p{
-    font-size: 20px;
-    margin: auto;
-    margin-bottom: 60px;
-  }
-
-  .hero button{
-    width: 300px;
-    height: 80px;
-    margin: auto;
-    font-size: 30px;
-  }
-
-  .estrella{
-    align-items: center;
     text-align: center;
-    background-color: #ece9ea;
   }
 
-  .estrella h2{
-    font-size: 35px;
-    margin: auto;
-  }
-
-  .estrella p{
-    font-size: 25px;
-    margin-top: 20px;
-    padding: 10px;
-  }
-
-  .carrousel .tarjeta{
-    width: 100%;
-    background-color: #ece9ea;
-  }
-
-  .tarjeta .card{
-    margin: auto;
-    width: 450px;
-    height: 220px;
-    padding: 20px 5px 5px 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
-  .subscripcion h2{
-    text-align: center;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-  }
-
-  .subscripcion p{
-    font-size: 36px;
-  }
-
-  .marcas p{
-    font-size: 20px;
-  }
-
-  .compra{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-
-  .compra .promo{
-    height: 430px;
-    margin: auto;
-    margin-bottom: 40px;
-  }
-
-  .info button{
-    width: 180px;
+  .compra .promo img {
+    margin-top: 3px;
+    margin-bottom: 2px;
+    width: 70px;
     height: 70px;
   }
 
-  .info p{
+  .celular {
+    margin: auto;
+    width: 70%;
+  }
+
+  .celular h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #434242;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .celular p {
+    width: 100%;
+    margin: auto;
     font-size: 20px;
-    width: 200px;
-    padding-bottom: 20px;
   }
 
-  .celular{
+  .celular img {
     width: 400px;
+    height: 400px;
+  }
+
+  .minutos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .minutos p {
+    padding-top: 100px;
+    font-size: 20px;
+  }
+
+  .globo h3 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .globo p {
+    font-size: 20px;
+  }
+
+  .globo img {
+    width: 400px;
+    margin-bottom: 4%;
+  }
+
+  .globo button {
+    padding: 12px;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+
+  .limonada {
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .limonada h3 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .limonada p {
+    font-size: 20px;
+    width: 80%;
     margin: auto;
   }
 
-  .celular h3{
-    margin: auto;
-    width: 200px;
+  .limonada .pizza img {
+    width: 250px;
+    height: 250px;
   }
 
-  .celular img{
+  .marcas {
+    height: 150px;
+  }
+
+  .marcas p {
+    font-size: 16px;
+    width: 70%;
+    margin: auto;
+  }
+
+  .ultimo {
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .logo .diseno h3 {
+    padding: 5px;
+  }
+
+  .logo .diseno p {
+    padding: 2px;
+  }
+  .logo .diseno {
     width: 300px;
     height: 300px;
+    margin: auto;
+    padding: 10px;
   }
 
-  .marcas{
+  .logo .diseno img {
+    width: 90px;
+  }
+
+  footer {
     width: 100%;
+  }
+}
+
+/*Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
+- Medida estandar pantalla resolucion 320 x 480 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .nav {
+    display: none !important;
+  }
+
+  header {
+    height: 1px;
+    padding: 2px;
+  }
+
+  .cuenta {
+    display: none !important;
+  }
+
+  .titulo a {
+    display: none !important;
+  }
+
+  .navbar {
+    height: 48px;
+    position: relative;
+  }
+
+  .navbar h1 {
+    text-align: center;
+    padding: 20px 12px;
+  }
+
+  .navbar h1 a {
+    color: #3e3a3c;
+  }
+
+  .checkbox,
+  .icons {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    padding: 10px 12px;
+  }
+
+  .icons {
+    pointer-events: none;
+    font-size: 24px;
+    color: #434242;
+  }
+
+  .checkbox {
+    opacity: 0;
+  }
+
+  .checkbox:checked ~ .menu {
+    display: block;
+    top: 48px;
+  }
+
+  .checkbox:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .fa-times {
+    display: none;
+  }
+
+  .checkbox:checked ~ .fa-times {
+    display: block;
+  }
+
+  .menu {
+    width: 60%;
+    position: absolute;
+    top: 48px;
+    background-color: rgb(47, 46, 46);
+    display: none;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(47, 46, 46);
+    display: block;
+    padding: 10px 12px;
+  }
+
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .red {
+    font-size: 30px;
+    padding-top: 100%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 10px;
+  }
+
+  .hero {
+    height: 650px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    margin: auto;
+    padding: 0px;
+    width: 80%;
+  }
+
+  .hero button {
+    margin: 30px;
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .estrella {
+    height: 420px;
+  }
+
+  .estrella h2 {
+    font-size: 25px;
+    margin: auto;
+  }
+
+  .estrella p {
+    margin: auto;
+    font-size: 15px;
+    padding: 20px;
+    width: 98%;
+    height: 2px;
+  }
+
+  .carrousel .tarjeta {
     max-height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
   }
 
-  .ultimo{
-    width: 100%;
-    min-height: 1000px;
-    
+  .card-tres {
+    display: none !important;
+  }
+  .card-dos {
+    display: none !important;
+  }
+  .tarjeta .card {
+    width: 50%;
+    padding: 2px;
+    margin: 10px;
+    height: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
-  .logo{
+  .card h2 {
+    padding: 2px;
+    font-size: 15px;
+  }
+  .card h3 {
+    font-size: 10px;
+  }
+  .card p {
+    font-size: 10px;
+    margin-top: 2px;
+    padding: 2px;
+  }
+  .icon img {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+  }
+
+  .subscripcion {
+    padding: 30px;
+  }
+
+  .subscripcion h2 {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #434242;
+  }
+
+  .subscripcion p {
+    font-size: 15px;
+    padding: 5px;
+    width: 60%;
+    margin: auto;
+  }
+
+  .compra {
+    padding: 3px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .logo .diseno p {
+  .compra .promo {
+    width: 42%;
+    height: 180px;
+    background-color: #ece9ea;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  }
+
+  .compra .promo .info h3 {
+    color: #3e3a3c;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .promo .info p {
+    display: none !important;
+  }
+
+  .compra .promo .info button {
+    background-color: #f90081;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 9px;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .compra .promo span {
+    font-size: 10px;
+    font-weight: 100;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .compra .promo img {
+    margin-top: 3px;
+    margin-bottom: 2px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .celular {
+    margin: auto;
+    width: 80%;
+  }
+
+  .celular h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #434242;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .celular p {
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .celular img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .minutos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .minutos p {
+    padding-top: 100px;
+    font-size: 10px;
+  }
+
+  .globo h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .globo p {
+    font-size: 15px;
+  }
+
+  .globo img {
+    width: 300px;
+    margin-bottom: 4%;
+  }
+
+  .globo button {
+    padding: 12px;
+    margin-bottom: 50px;
+    font-size: 12px;
+  }
+
+  .limonada {
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .limonada h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .limonada p {
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .limonada .pizza img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .marcas {
+    height: 150px;
+  }
+
+  .marcas p {
+    font-size: 15px;
+    width: 70%;
+    margin: auto;
+  }
+
+  .ultimo {
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
   }
 
-  footer{
-   width: 100%;
-   height: 1100px;
+  .logo .diseno h3 {
+    padding: 5px;
   }
 
-  .grilla{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 900px;
+  .logo .diseno p {
+    padding: 2px;
+  }
+  .logo .diseno {
+    width: 300px;
+    height: 300px;
+    margin: auto;
     padding: 10px;
   }
 
-  .grilla .region{
-    padding: 40px;
-
-  }
-  
-  .grilla .grande {
-  width: 900px;
-  padding: 20px;
+  .logo .diseno img {
+    width: 90px;
   }
 
-  .grilla img{
-  width: 50px;
+  footer {
+    width: 100%;
   }
- }
 
-/* Pantallas grandes */
+  .grilla img {
+    display: none !important;
+  }
+
+  .grilla i {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+/* Ordenadores de sobremesa y portátiles
+- Medida estandar de pantalla resolucion : 1224px */
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    display: none !important;
+  }
+
+  .marcas {
+    height: 200px;
+  }
+
+  .marcas p {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  footer {
+    width: 100%;
+    height: 800px;
+  }
+}
+
+/* Pantallas grandes
 @media only screen and (min-width : 1824px) {
-   
-  header{
-    margin-top: 10px;
+ 
+  header .respmenu{
+    display: none !important;
   }
 
-  header nav a{
-    font-size: 25px;
-  }
+ 
 
   header a{
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
     padding: 20px 30px 20px 0px;
   }
@@ -1271,7 +1713,7 @@ footer p {
     width: auto;
     margin: auto;
     text-align: center;
-    height: 880px;
+    height: 720px;
   }
 
   .hero h1{
@@ -1282,16 +1724,16 @@ footer p {
   }
 
   .hero p{
-    font-size: 25px;
+    font-size: 16px;
     margin: auto;
     margin-bottom: 80px;
   }
 
   .hero button{
-    width: 400px;
-    height: 80px;
+    width: 300px;
+    height: 50px;
     margin: auto;
-    font-size: 35px;
+    font-size: 16px;
   }
 
   .estrella{
@@ -1435,4 +1877,4 @@ footer p {
   .grilla img{
   width: 50px;
   }
- }
+ } */

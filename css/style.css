@@ -531,8 +531,7 @@ Smartphones (portrait & landscape)
   }
 
   header {
-    height: 1px;
-    padding: 2px;
+    display: none !important;
   }
 
   .cuenta {
@@ -570,7 +569,6 @@ Smartphones (portrait & landscape)
   .icons {
     pointer-events: none;
     font-size: 24px;
-    color: #434242;
   }
 
   .checkbox {
@@ -592,12 +590,16 @@ Smartphones (portrait & landscape)
 
   .checkbox:checked ~ .fa-times {
     display: block;
+    color: #fff;
+    background-color:rgb(47, 46, 46);
+    width: 70%;
+    height: 200px;
   }
 
   .menu {
-    width: 60%;
+    width: 70%;
     position: absolute;
-    top: 48px;
+    top: 8px;
     background-color: rgb(47, 46, 46);
     display: none;
   }
@@ -611,7 +613,11 @@ Smartphones (portrait & landscape)
     color: #fff;
     background-color: rgb(47, 46, 46);
     display: block;
-    padding: 10px 12px;
+    padding: 12px 30px;
+  }
+
+  .renters{
+    margin-top: 16px;
   }
 
   .menu li a:hover {
@@ -619,11 +625,14 @@ Smartphones (portrait & landscape)
   }
 
   .red {
-    font-size: 30px;
-    padding-top: 100%;
+    font-size: 40px;
+    padding-top: 70%;
+    padding-left: 10px;
     text-align: center;
     color: #fff;
-    letter-spacing: 10px;
+    letter-spacing: 12px;
+    text-align: center;
+    margin-bottom: 35px;
   }
 
   .hero {

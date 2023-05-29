@@ -594,6 +594,8 @@ Smartphones (portrait & landscape)
     background-color:rgb(47, 46, 46);
     width: 70%;
     height: 200px;
+    text-align: right;
+    top: 0;
   }
 
   .menu {
@@ -617,7 +619,7 @@ Smartphones (portrait & landscape)
   }
 
   .renters{
-    margin-top: 16px;
+    margin-top: 0px;
   }
 
   .menu li a:hover {

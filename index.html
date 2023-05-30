@@ -28,11 +28,24 @@
     </header>
 
     <section>
-      <nav class="navbar">
-        <input class="checkbox" type="checkbox" />
-        <i class="icons fas fa-bars"></i>
-        <i class="icons fas fa-times"></i>
-        <ul class="menu">
+      <div class="navbar">
+        <nav>
+          <a onclick="abrirmenu()">
+            <i class="icons fas fa-bars"></i>
+          </a>
+
+           <a href="#" class="limon">Lemonade</a>
+          
+          </nav>
+      </div>
+      
+
+        <div class="menu" id="menu">
+          <a onclick="cerrarmenu()" >
+          <i class="icons fas fa-times"> </i>
+        </a>
+
+        <ul >
           <li><a class="renters" href="#">Renters</a></li>
           <li><a href="#">Homeowners</a></li>
           <li><a href="#">Car</a></li>
@@ -47,9 +60,8 @@
             <i class="fa-brands fa-instagram"></i>
           </li>
         </ul>
-
-        <h1><a href="#">Lemonade</a></h1>
-      </nav>
+        </div>
+        
     </section>
 
     <!-- Titulo-->
@@ -441,5 +453,7 @@
         </div>
       </section>
     </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
